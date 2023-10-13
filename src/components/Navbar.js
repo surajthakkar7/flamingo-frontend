@@ -10,7 +10,7 @@ const NavBar = () => {
     window.location.href = `tel:${phoneNumber}`;
   };
   return (
-    <div>
+    <div style={{ position: "fixed", top: "0", left: "0", width: "100%" }}>
       <div
         style={{
           display: "flex",
