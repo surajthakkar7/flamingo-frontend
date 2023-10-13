@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "testimonial": "I had a great experience at Flamingo Hospital. The staff is caring and the facilities are top-notch."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "testimonial": "The doctors at Flamingo Hospital are highly skilled and compassionate. I highly recommend this hospital."
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "testimonial": "I've received excellent care at Flamingo Hospital. The nurses and doctors are dedicated to patient well-being."
+  }
+]
