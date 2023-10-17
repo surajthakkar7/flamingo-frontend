@@ -1,4 +1,6 @@
 import React from "react";
+import icu from "./images/icu.jpeg";
+import generalward from "./images/generalward.jpg";
 
 const Services = () => {
   return (
@@ -22,12 +24,19 @@ const Services = () => {
           </div>
           <div className="col-md-6">
             <img
-              src="/images/icu.jpg" // Replace with your actual image path
+              src={icu} // Replace with your actual image path
               alt="ICU Image"
               className="img-fluid"
             />
           </div>
         </div>
+        <p>
+          Our ICU and Trauma Center provides advanced care and facilities for
+          critically ill patients. We offer an 8-bed ICU with intensive care
+          systems for septic, drug addict, and accident-injured patients. Our
+          services include diagnostic and interventional bronchoscopy and fiber
+          optic wave insulation.
+        </p>
       </section>
 
       {/* Available Facilities Section */}
@@ -40,6 +49,12 @@ const Services = () => {
           <li>Modular Operation Theatre</li>
           <li>A desert ward bay area</li>
         </ul>
+        <p>
+          Our hospital offers a wide range of facilities to support our
+          patients. These include a fully equipped laboratory, a medical store,
+          an emergency department, a modular operation theatre, and a desert
+          ward bay area.
+        </p>
       </section>
 
       {/* General Ward Section */}
@@ -67,11 +82,18 @@ const Services = () => {
         </ul>
         <div className="text-center">
           <img
-            src="/images/general_ward.jpg" // Replace with your actual image path
+            src={generalward} // Replace with your actual image path
             alt="General Ward Image"
             className="img-fluid"
           />
         </div>
+        <p>
+          Our General Ward is open 24/7 and offers comprehensive medical care.
+          Our services include surgeries for stomach and intestinal conditions,
+          laparoscopic advanced surgery, and bariatric surgery. We also provide
+          treatments for benign tumors, urinary stones, prostate issues, and
+          more.
+        </p>
       </section>
     </div>
   );

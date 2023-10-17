@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import d1 from "./images/d1.png";
-import d2 from "./images/d2.png";
+import d1 from "./images/d1.jpg";
+import d2 from "./images/d2.jpg";
 import d3 from "./images/d3.jpeg";
 import AboutUs from "./AboutUs";
 import Services from "./Services";
-import ContactUs from "./ContactUs";
 import PatientTestimonials from "./PatientTestimonials"; // Import the PatientTestimonials component
 import HospitalInfo from "./HospitalInfo"; // Import the HospitalInfo component
 import Footer from "./ Footer";
