@@ -1,11 +1,19 @@
 import React from "react";
+import "./CSS/Footer.css"; // Import the CSS file for the Footer
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light text-center p-3">
+    <footer className="footer">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4 contact">
             <h5>Contact Us</h5>
             <p>
               Email: info@flamingohospital.com
@@ -15,7 +23,7 @@ const Footer = () => {
               Address: 123 Main Street, City, Country
             </p>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 quick-links">
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>
@@ -32,29 +40,34 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 follow-us">
             <h5>Follow Us</h5>
             <ul className="list-inline social-icons">
               <li className="list-inline-item">
                 <a href="#">
-                  <i className="fab fa-facebook"></i>
+                  <FontAwesomeIcon icon={faFacebook} size="2x" />
                 </a>
               </li>
               <li className="list-inline-item">
                 <a href="#">
-                  <i className="fab fa-twitter"></i>
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </li>
               <li className="list-inline-item">
                 <a href="#">
-                  <i className="fab fa-linkedin"></i>
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a href="#">
+                  <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="mt-3">
+      <div className="copyright">
         &copy; {new Date().getFullYear()} Flamingo Multispeciality Hospital. All
         rights reserved.
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import icu from "./images/icu.jpeg";
 import generalward from "./images/generalward.jpg";
+import "./CSS/Services.css"; // Import the CSS file for styling
 
 const Services = () => {
   return (

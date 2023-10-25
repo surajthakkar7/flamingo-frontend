@@ -1,4 +1,5 @@
 import React from "react";
+import "./CSS/BlogNews.css"; // Import the CSS file for styling
 
 const BlogNews = () => {
   const blogPosts = [
@@ -24,7 +25,7 @@ const BlogNews = () => {
   ];
 
   return (
-    <div>
+    <div className="page-container">
       <section className="blog-posts">
         <h1>Blog & News</h1>
         {blogPosts.map((post, index) => (

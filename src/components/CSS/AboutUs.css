@@ -1,0 +1,88 @@
+/* AboutUs.css */
+
+
+  
+  /* Title styles */
+  .about-us-title {
+    background-color: #0c671c;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #0072b5, #003f76);
+
+  }
+  
+  /* Image container styles */
+  .image-container {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  /* Text content styles */
+  .text-content {
+    flex: 10; /* Adjust the flex value as needed to control the width of text content */
+}
+  
+  /* Additional content styles (customize as needed) */
+  .about-us-content {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    color: #fff;
+    max-width: 100%;
+    background: linear-gradient(to bottom, #63b973, #349b49); /* Green gradient */
+
+  }
+  
+  .headingStyles {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000; /* Adjust the text color */
+  }
+  
+
+/* Container styles */
+.containerStyles {
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    background: linear-gradient(to bottom, #6b3a9e, #ff7f50); /* Purple to Orange gradient */
+    height: 100%; /* Ensure the container takes up the full height of its parent */
+  }
+  
+  .containerStyles h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0cea1b;
+    margin: 20px 0;
+  }
+  
+  .containerStyles p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f3f3f3;
+    margin: 15px 0;
+    text-align: center; /* Center text within the container */
+  }
+  
+  
+  .textStyles {
+    font-size: 18px;
+    line-height: 1.6; /* Slightly increased line height for readability */
+    text-align: center; /* Adjust the text alignment as needed */
+    color: #333; /* Adjust the text color */
+    margin-bottom: 20px; /* Increased margin for spacing */
+  }

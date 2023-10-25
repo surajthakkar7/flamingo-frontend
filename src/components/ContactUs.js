@@ -1,8 +1,9 @@
 import React from "react";
+import "./CSS/ContactUs.css"; // Import the CSS file for styling
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="page-container">
       <section className="contact-info">
         <h1>Contact Us</h1>
         <p>
@@ -18,7 +19,7 @@ const ContactUs = () => {
 
       <section className="map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.353198864749!2d69.65861887532012!3d23.23023097902872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39511f04a79959f5%3A0x45bb22f062f2ba31!2sFlamingo%20Multispeciality%20Hospital!5e0!3m2!1sen!2sin!4v1697127597883!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.353198864749!2d69.65861887532012!3d23.23023097902872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39511f04a79959f5%3A0x45bb22f062f2ba31!2sFlamingo%20Multispeciality%20Hospital!5e0!3m2!1en!2sin!4v1697127597883!5m2!1sen!2sin"
           width="600"
           height="450"
           style={{ border: "0" }}

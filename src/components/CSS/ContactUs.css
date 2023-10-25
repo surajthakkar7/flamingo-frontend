@@ -1,0 +1,90 @@
+/* ContactUs.css */
+
+/* Page container styles */
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Contact info section styles */
+  .contact-info {
+    background-color: #63b973;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Contact info title styles */
+  .contact-info h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Contact info text styles */
+  .contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Map section styles */
+  .map {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Get in touch section styles */
+  .contact-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Get in touch title styles */
+  .contact-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Form group styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Form label styles */
+  .form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Form input styles */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* CTA button styles */
+  .cta-button {
+    background-color: #63b973;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

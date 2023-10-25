@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import patientTestimonialsData from "./patientTestimonials.json";
+import "./CSS/PatientTestimonials.css"; // Import the CSS file
 
 const PatientTestimonials = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);

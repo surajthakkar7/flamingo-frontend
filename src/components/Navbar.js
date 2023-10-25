@@ -9,96 +9,101 @@ const NavBar = () => {
   const handleCallClick = () => {
     window.location.href = `tel:${phoneNumber}`;
   };
+
+  const navStyles = {
+    backgroundColor: "#349b49", // Green background color
+    color: "#fff",
+    padding: "10px 0",
+  };
+
+  const topBarStyles = {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    backgroundColor: "#63b973", // Lighter green background color
+    padding: "10px",
+  };
+
+  const logoStyles = {
+    marginRight: "20px",
+  };
+
+  const callToActionStyles = {
+    cursor: "pointer",
+    textDecoration: "underline",
+    backgroundColor: "#ffd700", // Yellow highlighted background color
+    padding: "5px 10px",
+    borderRadius: "5px",
+  };
+
+  const linkStyles = {
+    color: "#fff",
+    textDecoration: "none",
+    padding: "10px 20px",
+    fontSize: "16px",
+  };
+
   return (
-    <div style={{ top: "0", left: "0", width: "100%" }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "#0072c6",
-          color: "#fff",
-          padding: "0px 0",
-        }}
-      >
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <img src={logo} alt="Flamingo" width="48" height="48" />
+    <div>
+      <div style={topBarStyles}>
+        <div>
+          <img src={logo} alt="Flamingo" width="48" height="48" style={logoStyles} />
+          <Link to="/" style={{ color: "white", textDecoration: "none", fontSize: "24px" }}>
+            Flamingo Multispeciality Hospital
+          </Link>
         </div>
-        <div
-          style={{ flex: 1, textAlign: "center", cursor: "pointer" }}
-          onClick={handleCallClick} // Add this click event
-        >
+        <div style={callToActionStyles} onClick={handleCallClick}>
           Get an Appointment by giving a Missed Call to {phoneNumber}
         </div>
       </div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            Flamingo Multispeciality Hospital
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about-us">
-                  About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/doctors">
-                  Doctors
-                </Link>
-              </li>
-              {/*}    <li className="nav-item">
-                <Link className="nav-link" to="/patients">
-                  Patients
-                </Link>
-      </li>  */}
-              <li className="nav-item">
-                <Link className="nav-link" to="/appointments">
-                  Appointments
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact-us">
-                  Contact Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/blog-news">
-                  Blog/News
-                </Link>
-              </li>
-            </ul>
-            {/*    <ul className="navbar-nav ml-2">
-              <li className="nav-item">
-                <Link className="nav-link" to="/adminlogin">
-                  Admin Log In
-                </Link>
-              </li>
-              
-            </ul> */}
-          </div>
-        </div>
+
+      <nav style={navStyles}>
+        <ul
+          style={{
+            display: "flex",
+            listStyle: "none",
+            justifyContent: "center",
+            backgroundColor: "#349b49", // Green background color
+            margin: 0,
+            padding: 0,
+          }}
+        >
+          <li>
+            <Link to="/" style={{ ...linkStyles, fontSize: "18px" }}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about-us" style={{ ...linkStyles, fontSize: "18px" }}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" style={linkStyles}>
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link to="/doctors" style={linkStyles}>
+              Doctors
+            </Link>
+          </li>
+          <li>
+            <Link to="/appointments" style={linkStyles}>
+              Appointments
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact-us" style={linkStyles}>
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog-news" style={linkStyles}>
+              Blog/News
+            </Link>
+          </li>
+        </ul>
       </nav>
     </div>
   );

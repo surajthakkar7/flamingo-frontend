@@ -1,0 +1,48 @@
+/* HospitalInfo.css */
+.hospital-info-container {
+    background: #3498db; /* Blue background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hospital-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .data-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .data-item {
+    background: #1abc9c; /* Turquoise background */
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .data-key {
+    color: #e74c3c; /* Red text color */
+  }
+  
+  .data-value {
+    color: #e74c3c; /* Red text color */
+  }
+  
+  .hospital-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50; /* Dark gray text color */
+    margin: 20px 0;
+  }
+  

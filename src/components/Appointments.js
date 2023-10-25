@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./CSS/Appointments.css";
 const Appointments = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -42,7 +42,7 @@ const Appointments = () => {
   };
 
   return (
-    <div>
+    <div className="page-container">
       <section className="hero">
         <h1>Request an Appointment</h1>
         <p>Fill out the form below to schedule an appointment with us.</p>
@@ -129,7 +129,7 @@ const Appointments = () => {
             </form>
           </div>
         ) : (
-          <div>
+          <div className="success-message">
             <p>
               Your appointment request has been sent. Please wait for further
               instructions.

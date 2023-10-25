@@ -1,35 +1,57 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./CSS/HospitalInfo.css";
 
 const HospitalInfo = () => {
-  const hospitalData = {
-    happyPatients: 1000, // Replace with your actual data
-    yearsOfExperience: 20, // Replace with your actual data
-    numBeds: 300, // Replace with your actual data
-    numOperations: 5000, // Replace with your actual data
+  const [hospitalData, setHospitalData] = useState({
+    happyPatients: 0,
+    yearsOfExperience: 0,
+    numBeds: 0,
+    numOperations: 0,
+  });
+
+  // Replace the desired values here
+  const targetData = {
+    happyPatients: 1000,
+    yearsOfExperience: 20,
+    numBeds: 300,
+    numOperations: 5000,
   };
 
-  const dataKeys = Object.keys(hospitalData);
-  const dataValues = Object.values(hospitalData);
+  const animationSpeed = 20; // Adjust animation speed (lower value for faster animation)
+  const backgroundColor = "#0072c6"; // Background color
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHospitalData((prevData) => {
+        const updatedData = {};
+        for (const key in prevData) {
+          updatedData[key] = Math.min(
+            prevData[key] + 1,
+            targetData[key]
+          );
+        }
+        return updatedData;
+      });
+    }, animationSpeed);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const dataItems = Object.keys(hospitalData).map((key, index) => (
+    <div className="data-item" key={key}>
+      <span className="data-key">{key}:</span>
+      <span className="data-value">{hospitalData[key]}</span> {/* Fixed typo here */}
+    </div>
+  ));
+
+  const backgroundColorStyle = {
+    backgroundColor: backgroundColor,
+  };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        backgroundColor: "#0072c6",
-        color: "#fff",
-        padding: "5px 0",
-      }}
-    >
-      <div style={{ flex: 1, textAlign: "center", cursor: "pointer" }}>
-        <h2>
-          {dataKeys.map((key, index) => (
-            <span key={key}>
-              {index > 0 ? " | " : ""}
-              {key}: {dataValues[index]}
-            </span>
-          ))}
-        </h2>
+    <div className="hospital-info-container" style={backgroundColorStyle}>
+      <div className="hospital-info">
+        <div className="data-container">{dataItems}</div>
       </div>
     </div>
   );
