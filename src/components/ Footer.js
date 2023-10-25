@@ -1,12 +1,5 @@
 import React from "react";
 import "./CSS/Footer.css"; // Import the CSS file for the Footer
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -37,31 +30,6 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/contact-us">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-md-4 follow-us">
-            <h5>Follow Us</h5>
-            <ul className="list-inline social-icons">
-              <li className="list-inline-item">
-                <a href="#">
-                  <FontAwesomeIcon icon={faFacebook} size="2x" />
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="#">
-                  <FontAwesomeIcon icon={faTwitter} size="2x" />
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="#">
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a href="#">
-                  <FontAwesomeIcon icon={faInstagram} size="2x" />
-                </a>
               </li>
             </ul>
           </div>
