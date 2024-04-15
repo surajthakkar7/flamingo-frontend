@@ -25,8 +25,8 @@ const Services = () => {
           </div>
           <div className="col-md-6">
             <img
-              src={icu} // Replace with your actual image path
-              alt="ICU Image"
+              src={icu} 
+              alt="Inside of an intensive care unit"
               className="img-fluid"
             />
           </div>
@@ -83,9 +83,7 @@ const Services = () => {
         </ul>
         <div className="text-center">
           <img
-            src={generalward} // Replace with your actual image path
-            alt="General Ward Image"
-            className="img-fluid"
+            src={generalward} alt="General Ward " className="img-fluid"
           />
         </div>
         <p>

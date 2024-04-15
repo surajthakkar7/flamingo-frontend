@@ -16,7 +16,7 @@ const Home = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div>
